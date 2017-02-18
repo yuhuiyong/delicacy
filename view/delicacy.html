@@ -1,0 +1,59 @@
+<div class="deli_count">
+    <dl class="deli_list" ng-repeat="item in info">
+        <dt><img ng-src="https://fuss10.elemecdn.com/9/b0/770a2ce429db6bd081c7f432c32d1jpeg.jpeg?imageMogr/format/webp/" alt=""/></dt>
+        <dd>
+            <p>
+                <span>品牌</span>
+                <b>{{item.name}}</b>
+                <span>
+                    <i ng-repeat="i in item.supports">{{i.icon_name}}</i>
+                </span>
+            </p>
+
+            <p>
+                <span>
+                    <i>d</i><i>d</i><i>sd</i><i>{{item.rating}}</i>
+                </span>
+                <span>月售{{item.recent_order_num}}单</span>
+                <span>
+                    <i>准时达</i><i>蜂鸟专送</i>
+                </span>
+            </p>
+
+            <p>
+                <span>￥{{item.float_minimum_order_amount}}起送 /</span>
+                <span>{{item.piecewise_agent_fee.tips}}</span>
+                <span>
+                    <i>{{item.distance}}m /</i>
+                    <i>45分钟</i>
+                </span>
+            </p>
+        </dd>
+    </dl>
+    <div class="deli_mark">
+        <div class="deli_box">
+            <div class="deli_left">
+                <ul>
+                    <li>美食<span>605<i>》</i></span></li>
+                    <li>快餐便当<span>605<i>》</i></span></li>
+                    <li>特设菜系<span>605<i>》</i></span></li>
+                    <li>异国料理<span>605<i>》</i></span></li>
+                    <li>小吃夜宵<span>605<i>》</i></span></li>
+                </ul>
+            </div>
+            <div class="deli_right">
+                <ul>
+                    <li>全部快餐便当<span>21</span></li>
+                    <li>简餐<span>21</span></li>
+                    <li>盖浇饭<span>21</span></li>
+                    <li>米粉面馆<span>21</span></li>
+                    <li>香锅砂锅<span>21</span></li>
+                    <li>麻辣烫<span>21</span></li>
+                    <li>黄焖鸡米饭<span>21</span></li>
+                    <li>饺子混沌<span>21</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,188 @@
+*
+  padding: 0
+  margin: 0
+html,body
+  width: 100%
+  height: 100%
+html
+  font-size: 100px
+i
+  font-style: normal
+@import "common"
+body
+  overflow: hidden
+.wrapper
+  width: 100%
+  height: 100%
+  overflow: hidden
+  @include box-flex
+  @include flex-direction(column)
+.index_head
+  height: .44rem
+  line-height: .44rem
+  font-size: .18rem
+  color: #ffffff
+  i
+    position: absolute
+    top: 0
+    left: 0
+    width: .44rem
+    text-align: center
+    line-height: .44rem
+  p
+    text-align: center
+    background: #0097FF
+    font-weight: 600
+.index_sec
+  @include flex
+  @include box-flex
+  @include flex-direction(column)
+  overflow: hidden
+.index_nav
+  @include box-flex
+  height: .44rem
+  border-bottom: 1px solid #EEEEEE
+  color: #777777
+  font-size: .18rem
+
+  li
+    line-height: .22rem
+    @include flex
+    text-align: center
+    height: .22rem
+    border-left: 1px solid #EEEEEE
+    margin-top: .11rem
+    span
+      margin-right: .02rem
+    i
+      border: 1px solid #EEEEEE
+
+    &:active
+      color: #0097FF
+.index_main
+  @include flex
+  overflow-y: auto
+.deli_count
+  width: 100%
+  position: absolute
+  top: .88rem
+  left: 0
+.deli_list
+  @include box-flex
+  height: 100%
+  margin-top: .13rem
+  border-bottom: 1px solid #EEEEEE
+  dt
+    width: .7rem
+    height: .7rem
+    font-size: 0
+    margin: 0 .1rem .13rem .1rem
+    img
+      width: .7rem
+      height: .7rem
+  dd
+    @include flex
+    margin: 0.02rem .1rem .13rem 0
+    width: 100%
+    font-size: .14rem
+    margin-top: 0.02rem
+    p
+      &:nth-child(1)
+        @include box-flex
+        b
+          @include flex
+          font-size: .16rem
+          white-space: nowrap
+          text-overflow: ellipsis
+          overflow: hidden
+        span
+          &:nth-child(1)
+            background: #FFD930
+            display: inline-block
+            padding: .02rem .03rem
+            border-radius: .02rem
+            font-size: .12rem
+            margin-right: .04rem
+          &:nth-child(3)
+            float: right
+            i
+              font-size: .12rem
+              border: 1px solid #F2F2F2
+              color: #A4A4A4
+              display: inline-block
+              padding: .02rem .03rem 0 .03rem
+              border-radius: .02rem
+              margin-right: 0.03rem
+      &:nth-child(2)
+        margin-top: .05rem
+        span
+          &:nth-child(1)
+            i
+              &:not(:last-child)
+                color: #FFAA0C
+              &:last-child
+                margin-left: 0.06rem
+                color: #FF6000
+          &:nth-child(2)
+            font-size: .12rem
+            color: #8C8C8C
+          &:nth-child(3)
+            float: right
+            font-size: .12rem
+            i
+              &:nth-child(1)
+                border: 1px solid #B9DDFF
+                color: #66B5FF
+                padding: 0.01rem
+                border-radius: 0.02rem
+              &:nth-child(2)
+                background: #2796FF
+                color: #ffffff
+                padding: .02rem
+                margin-left: 0.02rem
+                border-radius: 0.02rem
+      &:nth-child(3)
+        color: #848484
+        margin-top: .08rem
+        font-size: .12rem
+        span
+          &:last-child
+            float: right
+            i
+              &:last-child
+                color: #2395FF
+
+
+
+
+
+.deli_mark
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0rem
+  left: 0
+  background: rgba(5,5,5,.8)
+  .deli_box
+    @include box-flex
+    width: 100%
+    font-size: .16rem
+    .deli_left
+      @include flex
+      background: #CCCCCC
+    .deli_right
+      @include flex
+      background: #ffffff
+
+
+
+
+
+
+
+
+
+
+
+
+

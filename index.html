@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <title>美食</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <header class="index_head" >
+        <i class=""><</i>
+        <p>美食</p>
+    </header>
+    <section class="index_sec">
+        <ul class="index_nav">
+            <li ui-sref="/delicacy" ui-sref-active="active" ng-click="delicacy()"><span>美食</span><i>s</i></li>
+            <li ui-sref="/distance" ui-sref-active="active"><span>排序</span><i>s</i></li>
+            <li ui-sref="/screen" ui-sref-active="active"><span>筛选</span><i>s</i></li>
+        </ul>
+        <div ui-view class="index_main">
+
+        </div>
+    </section>
+</div>
+</body>
+<script src="lib/angular1.3.8.js"></script>
+<script src="lib/angular-ui-router.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/config.js"></script>
+<!--<script src="js/service.js"></script>-->
+<script src="js/controller.js"></script>
+</html>
